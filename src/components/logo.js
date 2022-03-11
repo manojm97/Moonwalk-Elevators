@@ -1,9 +1,18 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
+import logo from 'assets/images/logo.png';
+import logoWhite from 'assets/images/logo-white.png';
 
-export default function Logo({ src, ...rest }) {
+export default function Logo({ white }) {
   return (
-    <h1>Logo</h1>
+    <Link
+      path="/"
+      sx={{
+        variant: 'links.logo',
+      }}
+    >
+      <Image src={white ? logoWhite : logo} alt="moonwalk elevators" />
+    </Link>
   );
 }
