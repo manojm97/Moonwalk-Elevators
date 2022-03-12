@@ -5,12 +5,13 @@ import { rgba } from 'polished';
 import Select from 'components/select';
 import bannerBg from 'assets/images/banner-bg.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
+import { Link as MenuLink } from "react-scroll";
 
 const options = [
   {
     id: 1,
-    label: 'Brooklyn, New york',
-    value: 'Brooklyn, New york',
+    label: 'Bengaluru, Karnataka',
+    value: 'Bengaluru, Karnataka',
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const options = [
 export default function Banner() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submitting...');
+   // console.log('submitting...');
   };
 
   return (
@@ -41,29 +42,39 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
-              Moonwalk Elevators.
+              Moonwalk Elevators
             </Heading>
             <Text as="p" sx={styles.desc}>
-              Whether you’re an established enterprise or a growing startup,
-              discover spaces that inspire which will best your most impactful
-              work.
+            Our mission is to improve the flow
+of urban life and has started providing solutions for all the
+Elevator needs on par with all standards.
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
-              {/* <Select
+              <Select
                 id="location"
-                label="Find workplace"
+                label="Workplace"
                 defaultValue={options[1].label}
                 sx={styles.select}
                 icon={mapMarker}
               >
-                {options?.map((option) => (
-                  <option value={option.value} key={option.id}>
-                    {option.label}
+                {/* {options?.map((option) => ( */}
+                  <option value={options[0].value} key={options[0].id}>
+                    {options[0].label}
                   </option>
-                ))}
-              </Select> */}
+                {/* ))} */}
+              </Select>
               <Button type="submit" sx={styles.button} variant="primary">
-                Subscribe
+              <MenuLink
+                    to="customer"
+                    spy={true}
+                    offset={-70}
+                    smooth={true}
+                    duration={500}
+                    className="nav-item"
+                    activeClass="active"
+                  >
+                    Know more
+                  </MenuLink>
               </Button>
             </Box>
           </Box>

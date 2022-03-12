@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'Moonwalk Elevators',
-  author = 'JSM',
+  description = 'moonwalk elevators descriptions',
+  author = 'RedQ, Inc',
   meta,
-  title = 'Moonwalk Elevators',
+  title = 'moonwalk elevators title',
 }) {
   const metaData = [
     {
@@ -41,7 +41,6 @@ export default function SEO({
       content: description,
     },
   ].concat(meta);
-  
   return (
     <Head>
       <title>{title}</title>
@@ -55,4 +54,5 @@ export default function SEO({
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
+  description: ``,
 };

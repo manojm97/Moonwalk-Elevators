@@ -12,7 +12,7 @@ export default function Logo({ white }) {
         variant: 'links.logo',
       }}
     >
-      <Image src={white ? logoWhite : logo} alt="moonwalk elevators" />
+      <Image src={white ? logoWhite : logo} alt="moonwalk elevators logo" />
     </Link>
   );
 }

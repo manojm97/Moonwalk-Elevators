@@ -1,36 +1,31 @@
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
-
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import Banner from '../sections/banner';
-import KeyFeature from '../sections/key-feature';
-import ServiceSection from '../sections/service-section';
-import Feature from '../sections/feature';
-import CoreFeature from '../sections/core-feature';
-import WorkFlow from '../sections/workflow';
-import Package from '../sections/package';
-import TeamSection from '../sections/team-section';
-import TestimonialCard from '../sections/testimonial';
-import ReadingBar from "components/ReadingBar";
+import Banner from 'sections/banner';
+import Clients from 'sections/clients';
+import FeaturedSpace from 'sections/featured-space';
+import OurCustomer from 'sections/our-customer';
+import Gallery from 'sections/gallery';
+import Pricing from 'sections/pricing';
+import Blog from 'sections/blog';
+import Subscription from 'sections/subscription';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
-       <ReadingBar />
-        <Layout>   
-          <SEO title="Moonwalk Elevators" />  
-          <Banner />
-          <KeyFeature />      
-          <ServiceSection />
-          <Feature />
-          <CoreFeature />
-          <WorkFlow />
-          <Package />
-          <TeamSection />
-          <TestimonialCard />
-        </Layout>
+      <Layout>
+        <SEO title="Moonwalk Elevators" />
+        <Banner />
+        <Clients />
+        <FeaturedSpace />
+        <Gallery />
+        <Pricing />
+        <OurCustomer />
+        <Blog />
+        <Subscription />
+      </Layout>
     </ThemeProvider>
   );
 }
