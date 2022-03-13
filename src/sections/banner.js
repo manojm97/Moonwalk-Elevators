@@ -44,6 +44,9 @@ export default function Banner() {
             <Heading as="h1" sx={styles.heroTitle}>
               Moonwalk Elevators
             </Heading>
+            <Heading as="h2" sx={styles.heroTitleLine}>
+            Get the Best One For your Building
+            </Heading>    
             <Text as="p" sx={styles.desc}>
             Our mission is to improve the flow
 of urban life and has started providing solutions for all the
@@ -128,6 +131,16 @@ const styles = {
     lineHeight: [1.4, null, null, null, null, null, 1.57],
     '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
       fontSize: 40,
+    },
+  },
+  heroTitleLine: {
+    fontSize: 15,
+    opacity:0.5,
+    fontWeight: 200,
+    letterSpacing: 'heading',
+    lineHeight: [1.4, null, null, null, null, null, 1.57],
+    '@media only screen and (min-height: 720px) and (max-height: 760px), (min-width: 1501px) and (max-width: 1560px) ': {
+      fontSize: 20,
     },
   },
   desc: {

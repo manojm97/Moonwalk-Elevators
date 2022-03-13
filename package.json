@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "framer-motion": "^4.1.17",
     "next": "9.5.3",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",

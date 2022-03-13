@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Text } from 'theme-ui';
+import { jsx, Box, Heading, Text,Image } from 'theme-ui';
 
-const SectionHeading = ({ slogan, title, description, ...props }) => {
+const SectionHeading = ({ slogan, title, description,emoji, ...props }) => {
   return (
     <Box sx={styles.headingWrapper} {...props}>
       {slogan && (
@@ -9,7 +9,10 @@ const SectionHeading = ({ slogan, title, description, ...props }) => {
           {slogan}
         </Text>
       )}
-      <Heading sx={styles.title}>{title}</Heading>
+      <Heading sx={styles.title}>
+        {emoji ? <span>{title}</span> : title}
+        {emoji && <Image src={emoji} alt="emoji" />}
+      </Heading>
       {description && (
         <Text sx={styles.description} as="p">
           {description}
@@ -29,7 +32,7 @@ const styles = {
   },
   slogan: {
     color: (theme) => theme.colors.primary,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 700,
     lineHeight: 2.22,
     mb: ['12px'],
@@ -39,6 +42,12 @@ const styles = {
     fontWeight: [500, 400],
     lineHeight: 1.68,
     letterSpacing: 'heading',
+    img: {
+      ml: ['15px'],
+      position: 'relative',
+      top: '8px',
+      maxWidth: [25, null, null, '100%'],
+    },
   },
   description: {
     fontSize: 17,

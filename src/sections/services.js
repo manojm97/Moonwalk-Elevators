@@ -6,12 +6,12 @@ import SectionHeading from 'components/section-heading';
 import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
-import expand from 'assets/images/icons/expand.png';
-import users from 'assets/images/icons/users.png';
-import wifi from 'assets/images/icons/wifi.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.webp';
-import slider3 from 'assets/images/features/3.png';
+import technical from 'assets/images/icons/technical.png';
+import technicalsupport from 'assets/images/icons/technical-support.png';
+import watch from 'assets/images/icons/watch.png';
+import slider1 from 'assets/images/services/1.jpg';
+import slider2 from 'assets/images/services/2.jpg';
+import slider3 from 'assets/images/services/3.jpg';
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -23,46 +23,50 @@ const data = {
   feature: [
     {
       id: 1,
-      icon: expand,
-      title: '1000 ft2',
-      description: 'you will get 1000ft square space facility here.',
+      icon: technical,
+      title: 'Installation ',
+      description: `We install safe, stylish, eco friendly, energy saving elevators in your Residential or Commercial
+      Projects that are cost effective and durable with minimal maintenance`,
     },
     {
       id: 2,
-      icon: users,
-      title: '80 Members',
-      description: 'you will get advantage to live 80+ member here.',
+      icon: technicalsupport,
+      title: 'AMC',
+      description: `We offer economical plans for Annual Maintenance in order to ensure safe & smooth functioning of the
+      Elevator at all times.`,
     },
     {
       id: 3,
-      icon: wifi,
-      title: '100 mbps',
-      description: 'Internet speed is much better than others.',
+      icon: watch,
+      title: 'Modernization ',
+      description: `We also undertake to install new elevators in place of old and obsolete ones our work flow
+      from design. dismantling, removal of the old elevator and replacing with a new and modern one is quick
+      and obstruction fee.`,
     },
   ],
   gallery: [
     {
       id: 1,
       image: slider1,
-      title: 'Kin Co-working Space',
-      desc: '442 Broadway, New York',
+      title: 'Home Elevators',
+      desc: '1',
     },
     {
       id: 2,
       image: slider2,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Jamaica',
+      title: 'Home Elevators',
+      desc: '2',
     },
     {
       id: 3,
       image: slider3,
-      title: 'Kin Co-working Space',
-      desc: '212 Broadway, Houston',
+      title: 'Home Elevators',
+      desc: '3',
     },
   ],
 };
 
-const FeaturedSpace = () => {
+const Services = () => {
   const isPause = useRef(false);
   const swiperRef = useRef(null);
   const [togglePlay, setTogglePlay] = useState(false);
@@ -103,14 +107,14 @@ const FeaturedSpace = () => {
   };
 
   return (
-    <Box id="feature" as="section" sx={styles.section}>
+    <Box id="services" as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Some good place to where can build your startup business"
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="Services we offer"
+              description="We provide best service to customers as per their needs."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
@@ -154,7 +158,7 @@ const FeaturedSpace = () => {
   );
 };
 
-export default FeaturedSpace;
+export default Services;
 
 const styles = {
   section: {

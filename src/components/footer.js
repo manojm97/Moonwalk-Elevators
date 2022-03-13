@@ -8,27 +8,27 @@ const navItems = [
   {
     id: 1,
     link: '#!',
-    title: 'Home',
+    title: 'Email',
   },
   {
     id: 2,
     link: '#!',
-    title: 'Advertise',
+    title: 'Facebook',
   },
   {
     id: 3,
     link: '#!',
-    title: 'Supports',
+    title: 'Twitter',
   },
   {
     id: 4,
     link: '#!',
-    title: 'Marketing',
+    title: 'Youtube',
   },
   {
     id: 5,
     link: '#!',
-    title: 'FAQ',
+    title: 'Instagram',
   },
 ];
 

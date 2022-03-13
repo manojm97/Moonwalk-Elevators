@@ -57,7 +57,7 @@ export default function Header() {
                 </Box>
                 <Button sx={styles.joinNow} variant="primaryMd">
                   <MenuLink
-                    to="subscription"
+                    to="contact"
                     spy={true}
                     offset={-70}
                     smooth={true}

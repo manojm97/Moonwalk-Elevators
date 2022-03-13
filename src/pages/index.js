@@ -5,12 +5,13 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Clients from 'sections/clients';
-import FeaturedSpace from 'sections/featured-space';
+import Services from 'sections/services';
 import OurCustomer from 'sections/our-customer';
 import Gallery from 'sections/gallery';
-import Pricing from 'sections/pricing';
-import Blog from 'sections/blog';
-import Subscription from 'sections/subscription';
+//import Pricing from 'sections/pricing';
+import About from 'sections/about';
+import Contact from 'sections/contact';
+import Faq from 'sections/faq';
 
 export default function IndexPage() {
   return (
@@ -18,13 +19,14 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Moonwalk Elevators" />
         <Banner />
-        <Clients />
-        <FeaturedSpace />
+        <About />
+        <Services />
         <Gallery />
-        <Pricing />
+        {/* <Pricing /> */}
         <OurCustomer />
-        <Blog />
-        <Subscription />
+        <Clients />
+        <Faq />
+        <Contact />     
       </Layout>
     </ThemeProvider>
   );

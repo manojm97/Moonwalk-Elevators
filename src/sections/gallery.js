@@ -5,43 +5,43 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 
-import gallery1 from 'assets/images/gallery/1.png';
-import gallery2 from 'assets/images/gallery/2.png';
-import gallery3 from 'assets/images/gallery/3.png';
-import gallery4 from 'assets/images/gallery/4.png';
-import gallery5 from 'assets/images/gallery/5.png';
-import gallery6 from 'assets/images/gallery/6.png';
+import gallery1 from 'assets/images/gallery/1.jpg';
+import gallery2 from 'assets/images/gallery/2.jpg';
+import gallery3 from 'assets/images/gallery/3.jpg';
+import gallery4 from 'assets/images/gallery/4.jpeg';
+import gallery5 from 'assets/images/gallery/5.jpg';
+import gallery6 from 'assets/images/gallery/6.jpg';
 
 const data = [
   {
     id: 1,
     image: gallery1,
-    title: 'Front working space',
+    title: 'SS Etched & Gold design',
   },
   {
     id: 2,
     image: gallery2,
-    title: 'Meeting corner',
+    title: 'SS Hairline design',
   },
   {
     id: 3,
     image: gallery3,
-    title: 'Guest meeting room',
+    title: 'Auto doors',
   },
   {
     id: 4,
     image: gallery4,
-    title: 'Guest rest room',
+    title: 'Manual doors',
   },
   {
     id: 6,
     image: gallery6,
-    title: 'Kitchen room',
+    title: 'Fall Ceiling',
   },
   {
     id: 5,
     image: gallery5,
-    title: 'Single working space',
+    title: 'Elevator Control System',
   },
 ];
 
@@ -55,8 +55,8 @@ const Gallery = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan="Working space"
-          title="Let’s meet our interior room decoration"
+          slogan="Home Elevators"
+          title="Let’s meet our interior cabins"
         />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
@@ -64,7 +64,7 @@ const Gallery = () => {
           ))}
         </Box>
         <Button variant="muted" sx={styles.button}>
-          Explore More <RiArrowRightSLine size="20px" />
+          More soon <RiArrowRightSLine size="20px" />
         </Button>
       </Container>
     </Box>

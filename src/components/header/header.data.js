@@ -4,23 +4,27 @@ export default [
     label: 'Home',
   },
   {
-    path: 'clients',
-    label: 'Clients',
+    path: 'about',
+    label: 'About',
   },
   {
-    path: 'feature',
-    label: 'Feature',
+    path: 'services',
+    label: 'Services',
   },
   {
     path: 'gallery',
     label: 'Gallery',
   },
+  // {
+  //   path: 'pricing',
+  //   label: 'Pricing',
+  // },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'clients',
+    label: 'Clients',
   },
   {
-    path: 'blog',
-    label: 'Blog',
+    path: 'faq',
+    label: 'Faq',
   },
 ];
