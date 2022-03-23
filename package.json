@@ -23,6 +23,7 @@
     "react-masonry-component": "^6.2.1",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
+    "react-scroll-to-top": "^1.0.8",
     "react-slick": "^0.27.11",
     "react-stickynode": "^3.0.3",
     "swiper": "^6.3.1",

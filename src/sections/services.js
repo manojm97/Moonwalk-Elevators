@@ -24,14 +24,16 @@ const data = {
     {
       id: 1,
       icon: technical,
-      title: 'Installation ',
+      title: 'Installation',
+      subtitle: '(New Lift Instalation)',
       description: `We install safe, stylish, eco friendly, energy saving elevators in your Residential or Commercial
       Projects that are cost effective and durable with minimal maintenance`,
     },
     {
       id: 2,
       icon: technicalsupport,
-      title: 'AMC',
+      title: 'AMC ',
+      subtitle: '(Annual Maintenance Contract)',
       description: `We offer economical plans for Annual Maintenance in order to ensure safe & smooth functioning of the
       Elevator at all times.`,
     },
@@ -39,6 +41,7 @@ const data = {
       id: 3,
       icon: watch,
       title: 'Modernization ',
+      subtitle: '(Old Lift to New Lift upgrade)',
       description: `We also undertake to install new elevators in place of old and obsolete ones our work flow
       from design. dismantling, removal of the old elevator and replacing with a new and modern one is quick
       and obstruction fee.`,

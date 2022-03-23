@@ -55,20 +55,21 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
-                  <MenuLink
-                    to="contact"
-                    spy={true}
-                    offset={-70}
-                    smooth={true}
-                    duration={500}
-                    className="nav-item"
-                    activeClass="active"
-                    onClick={closeMobileMenu}
-                  >
+
+                <MenuLink
+                  to="contact"
+                  spy={true}
+                  offset={-70}
+                  smooth={true}
+                  duration={500}
+                  className="nav-item"
+                  activeClass="active"
+                  onClick={closeMobileMenu}
+                >
+                  <Button sx={styles.joinNow} variant="primaryMd">
                     Contact us
-                  </MenuLink>
-                </Button>
+                  </Button>
+                </MenuLink>
               </Flex>
 
               {mobileMenu ? (

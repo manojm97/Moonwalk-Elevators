@@ -31,8 +31,8 @@ const Contact = () => {
             title="Address and contact"
             description=""
           />
-          <p>MOONWALK ELEVATORS <br/> 5, Kanakapura
-          Main Road, Konakunte Cross, Bangalore - 560 062<br/> Contact : 6364554499,
+          <p>MOONWALK ELEVATORS <br/> 21/5A, Konanakunte cross,
+           Kanakapura Main Road, Near manasa Theater Bangalore - 560062<br/> Contact : 8660594501,
           6364552299<br/>
           Email : moonwalkelevators.blr@gmail.com</p>
         </Box>
@@ -70,10 +70,10 @@ const styles = {
     margin: "0 auto",
     textAlign: "center",
     p: {
-      lineHeight: [2, 3.12],
-      mt: [20, 0],
-      letterSpacing: "heading",
-      color: rgba("#C494F9", 0.6),
+      // lineHeight: [3, 3.12],
+      // mt: [20, 0],
+      // letterSpacing: "heading",
+      color: rgba("#DCBCFE", 0.6),
     },
   },
   form: {

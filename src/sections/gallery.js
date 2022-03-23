@@ -36,12 +36,12 @@ const data = [
   {
     id: 6,
     image: gallery6,
-    title: 'Fall Ceiling',
+    title: 'Elevator Control System',
   },
   {
     id: 5,
     image: gallery5,
-    title: 'Elevator Control System',
+    title: 'Fall Ceiling',
   },
 ];
 

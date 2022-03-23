@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from "react-scroll-to-top";
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import SEO from 'components/seo';
@@ -18,6 +19,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <Layout>
         <SEO title="Moonwalk Elevators" />
+        <ScrollToTop smooth color="#8D448B" width="20" viewBox ="25 0 256 256"/>
         <Banner />
         <About />
         <Services />

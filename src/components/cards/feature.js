@@ -8,6 +8,7 @@ const Feature = ({ data: feature }) => {
     <Box key={feature.id} sx={styles.featureItem}>
       <Image loading="lazy" src={feature.icon} alt={feature.title} />
       <Heading as="h3">{feature.title}</Heading>
+      <Heading as="h4">{feature.subtitle}</Heading>
       <Text as="p">{feature.description}</Text>
     </Box>
   );
@@ -23,6 +24,12 @@ const styles = {
       fontWeight: 500,
       letterSpacing: 'heading',
       fontSize: [18, null, null, null, null, 20],
+    },
+    h4: {
+      lineHeight: 1.5,
+      // fontWeight: 440,
+      // letterSpacing: 'heading',
+      // fontSize: [20, null, null, null, null, 20],
     },
     p: {
       color: rgba('#343D48', 0.75),

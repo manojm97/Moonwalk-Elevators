@@ -39,8 +39,9 @@ export default function Footer() {
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
             <Logo white />
+            <Text>" "</Text>
             <Text as="span">
-              All right reserved - Design &amp; Developed by Moonwalk elevators
+              All right reserved - Design &amp; Developed by Moonwalk Elevators
             </Text>
           </Flex>
 
